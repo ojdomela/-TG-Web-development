@@ -1,0 +1,88 @@
+HTML Forms
+HTML formulieren zijn de belangrijkste schakel tussen een gebruiker en een website of een applicatie. Zij laten gebruikers toe gegevens naar websites te sturen. Meestal zal dat naar de server zijn maar een webpagina kan de gegevens ook zelf interpreteren.
+Een HTML form bestaat uit een aantal elementen. Bijvoorbeeld textfields (bestaande uit één of meerdere regels), choices of buttons.
+
+
+1. Maak een HTML form waarbij de gebruiker zijn naam en achternaam in kan vullen. Zie hieronder voor een voorbeeld:
+    
+    <form action="mailto:info@TechGrounds.nl" method="POST" enctype="text/plain">
+        <label>Voornaam: </label>
+        <input type="text" name="Voornaam"><br>
+        <label>Achternaam: </label>
+        <input type="text" name="Achternaam"><br>
+        <input type="submit">
+      </form>
+
+2. Naast input text fields zijn er ook nog andere input fields. Maak voor elk input field een voorbeeld:
+
+● radiobutton 
+● checkbox 
+● password 
+● reset
+● submit
+● date
+● search 
+● time
+● hidden 
+● email
+
+
+3. Maak een input email field met een submit knop.
+tip: wat gebeurt er wanneer je op de submit knop clickt met een random text?
+
+
+4. Een formulier kun je ook groeperen. Zie hier onder voor een voorbeeld:
+ Bouw dit voorbeeld na.
+
+
+5. Naast input element heb je ook een select element. Hiermee kan je een dropdown list maken. Maak een drop down list.
+
+
+6. We hebben nu geleerd hoe je dropdown list, radio buttons en checkboxes maak. Dit zijn 3 verschillende manieren om de gebruiker een keuze te laten maken. Benoem voor dropdown list, radio buttons en checkboxes een situatie waar je in kan gebruiken en leg dat uit?
+
+
+7. Maak een reserveringsformulier om een sport te reserveren. In dit formulier willen we graag het volgende weten:
+● Naam van dat persoon
+● Off hij/zij lidmaatschap heeft
+● E-mail van dat persoon
+● Type sport om te reserveren. Keuze uit: tafeltennis, badminton of squash
+● Datum en tijdstip om te reserveren
+● Een checkbox waarbij de gebruiker akkoord gaat over de reserverings voorwaardes
+● Een submit knop
+
+
+8. Maak een reserverings formulier om een boek te reserveren. In dit formulier willen we graag het volgende weten:
+● Naam van dat persoon
+● Telefoonnummer
+● E-mail van dat persoon
+● Naam van dat boek
+● Aantal boeken om te reserveren. Het aantal moet minimaal 1 en maximaal 5 zijn.
+● Een submit knop
+
+
+9. Bouw nu zelf een formulier met wat je hiervoor hebt geleerd.
+HTML tables
+
+
+10. Om een tabel te maken heb je volgende elementen nodig:
+● <table>
+● <thead>
+● <tbody>
+● <tfoot>
+● <th>
+● <tr>
+● <td>
+Geef voor elke element een definitie.
+
+
+11. Maak een tabel met <table> element. Zie hieronder:
+
+
+12. Maak een agenda tabel met <table> element. Zie hieronder:
+
+
+13. Voor het maken van een tabel kan je ook gebruik maken van colspan en rowspan attributen. Zoek uit wat colspan en rowspan attribuut doet en meet het volgende:
+
+
+14. Maak nu zelf een tabel met de elementen die je hiervoor hebt geleerd.
+Maak geen gebruik van css.

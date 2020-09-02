@@ -1,0 +1,130 @@
+intro
+
+1.Wat is het verschil tussen het internet en het world wide web?
+
+    Internet is de verbinding tussen verschillende servers, computers en apparaten (enorm openbaar netwerk). Om toegang te krijgen tot the World Wide Web heb je internet nodig. 
+    WWW is een set afspraken over web-protocollen, zoals het gebruik van URLs, HTTP en HTML.
+
+
+2.Wat is het verschil tussen HTML, CSS en JavaScript?
+
+    HTML: de standaard opmaaktaal voor webpagina's waar de inhoud kan worden toegevoegd.
+    CSS: de taal die we gebruiken om een ​​HTML-document op te maken en de layout van een webpagina te specificeren.
+    Javascript: een programmeertaal om het gedrag van webpagina’s aan te passen en meer levendig en interactief te maken.
+
+
+3.Wat is een HTML tag en een HTML element? Hoe open je een HTML tag en hoe sluit je een HTML tag. Maak hiervoor voorbeelden en leg uit. 
+
+    HTML tags worden gebruikt om elementen te beginnen en te eindigen. Elementen zijn onderdeel van een HTML bestand in een browser.
+
+    <h1>Dit</h1> zijn de opening en closing tags van het h1 element, wat een header maakt van het woordje 'dit.'
+
+4.HTML gebruikt basis tags om structuur op te bouwen. De <html>, <head> en <body>. Geef voor elke element aan waarvoor het dient. 
+
+    <html> het top-level (of root) element waar alle andere elementen in zitten
+    <head> het element waarin alle metadata van de pagina zit, veelal voor zoekmachines maar ook voor de titel, Javascript en/of CSS.
+    <body> het element waarin alle content van de pagina zit.
+
+
+5.Op HTML elementen kun je attributen gebruiken. Wat zijn HTML attributen ? Geef minimaal 5 attributen en maak voorbeelden waar je de attributen in toepast.
+        
+    Attributen bevatten informatie over het betreffende element en zijn altijd gespecificeerd in de opening tag. Laten we als voorbeeld een IMG tag bekijken:
+            <img src="img/gember_thee.jpg" alt="gember thee" width="100" class="voorbeeld" id="gember1">
+    - src; voor het aangeven van de locatie van het plaatje
+    - alt; de tekst die bij mouse-over bij het plaatje verschijnt
+    - width; om de breedte van het plaatje aan te passen.
+    - class; voor het aanmaken van classificaties voor je elementen, zodat je ze als groep kunt aanspreken
+    - id; om het element een ID / naam te geven, zodat je  bv in de css het element makkelijk kunt aanspreken
+
+
+6.Waarom is een goede HTML Structuur belangrijk? Is deze code een goede structuur? Leg uit.
+
+    Goede HTML structuur is belangrijk om je pagina overzichtelijk en leesbaar te houden.
+    De gelinkte code is geen goede structuur, omdat deze geen tags gebruikt voor paragraphs of headers. 
+    In de code ziet dat er prima uit maar op de webpagina zelf niet.
+
+7.Wat is het verschil tussen inline en block elementen?
+
+    Een block element begint altijd op een nieuwe regel en neemt de hele breedte in beslag. 
+    Het kan gaan om één regel of meerdere regels. Een inline element start niet op een nieuwe regel en bestaat maar uit één regel.
+
+
+8.Wat betekent nesting? Codeer een voorbeeld met nesting erin.
+
+    Nesting betekent dat je het ene element 'nestelt' binnen een ander element. Dit kan je gebruiken om een paar elementen bij elkaar te groeperen, zoals bij div containers, om overzicht / structuur in je content aan te brengen. 
+    Je kunt naar de relatie van de elementen kijken als parent-child. Zowel inline elementen als block elementen kunnen genest worden, en de block elementen kunnen ook meerdere lagen diep genesteld worden. Er dient dan wel goed opgelet te worden wat waar wordt geopend of gesloten, want hoe meer lagen, hoe minder overzichtelijk de html structuur te lezen is. 
+    Voorbeeld: div van 2 nested lagen diep:
+            <div class="outer-parent">
+                    <div class="inner-div">
+                            <p>This is a paragraph, nested in the first inner-div</p>
+                    </div>
+                    <div class="inner-div">
+                            <p>This is another paragraph, in the 2nd inner-div</p>
+                    </div>
+            </div>
+
+9.Sinds de komst van HTML5 zijn er elementen die betekenissen hebben. Wat wordt er bedoeld met HTML semantics? Waarom is het gebruik van semantics belangrijk?  
+
+        Semantiek verwijst naar de juiste interpretatie van de betekenis van een woord of zin. Met HTML semantics wordt bedoeld dat HTML-elementen al enige informatie overbrengen over het type inhoud dat zich tussen de openende en sluitende tags bevindt. Door correct gebruik te maken van semantics is de opmaak zowel door mensen als machinaal leesbaar.
+
+10.Wat voor content zou je in de volgende elementen gebruiken? Geef in je antwoord voor elk element een toelichting. 
+
+●<header>   Het 'hoofd' van een pagina, met daar vaak het logo van de site en een navigatie menu
+●<footer>   De 'voeten' van je structuur-> het onderste gedeelte van een pagina, met bv contact informatie, copyright...
+●<main>     Het kerngedeelte van een pagina, zoals de producten, prijs en omschrijving bij een webshop   
+●<nav>      een navigatie menu of systeem, voor links binnen de pagina of naar andere pagina's binnen de site
+●<section>  Om je pagina in enkele topics te verdelen. Bijvoorbeeld 1 sectie met alles over theesoorten, 1 sectie over locaties, 1 sectie over het brouwproces
+●<aside>    Voor het aangeven van wat extra informatie, die eigenlijk niet nodig is voor de betreffende content. Denk aan een leuk weetje over een gebouw, of korte uitleg waaraan    
+            een relatief onbekend begrip refereert (bv: übermensch)
+●<article>  Geeft aan dat dit groepje onafhankelijke, vrijstaande informatie bevat. In andere woorden vormt dit groepje een artikel.
+
+Headers
+
+11.Onderzoek en leg uit waarom headers zaowel belangrijk zijn voor zoekmachines als voor de gebruikers. 
+
+    Headers trekken de aandacht van de gebruiker en het kondigt de pagina inhoud aan.
+    Heading tags zijn belangrijk voor zoekmachines om de informatie te indexeren.
+    Een goed passende header is helder voor lezers en helpt tegelijkertijd mensen je pagina te vinden.
+
+12.Onderzoek hoe je een text-header aanmaakt en reproduceer het volgende resultaat: 
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+13.Onderzoek wat een paragraaf tag is en hoe hij gebruikt wordt. Geef hier een voorbeeld bij.
+
+        <p>Paragraph tags worden gebruikt om een of meerdere zinnen in een paragraaf te zetten, dwz zonder linebreaks ertussenin.<p>
+        <p>Meerdere paragraph tags maken dus meerdere paragrafen, MET linebreaks ertussenin.</p>
+
+14.Onderzoek en leg het verschil tussen het stoppen van alle tekst in één paragraaf tag,en het opsplitsen van de tekst in meerdere tags uit.
+
+        <p>Paragraph tags worden gebruikt om een of meerdere zinnen in een paragraaf te zetten, dwz zonder linebreaks.<p>
+        <p>Meerdere paragraph tags maken dus meerdere paragrafen, MET linebreaks</p>
+
+15.Reproduceer het volgende resultaat door gebruik te maken van text-headers en de paragraaf tags.
+16.Voeg een Horizontal rule toe en reproduceer het volgende resultaat. 
+17.Voeg een link tag toe en reproduceer het volgende resultaat in de footer.
+
+
+        <h1> Mijn eerste website</h1>
+        <h2> Mijn eerste sub-kop</h2>
+        <p>Lorem ipsum DimSum </p>
+        <h2> Mijn tweede sub-kop</h2>
+        <p>paragraaf numero uno</p><br>
+        <p>paragraaf numero duo</p>
+        <hr>
+        <h1>Footer</h1>
+        <p>deze website is gebouwd door het meest getalenteerde groepje van de <a href="http://www.techgrounds.nl"> target="_blank" rel="external" referrerpolicy="origin">TechGrounds Academy</a>
+        
+18.Onderzoek welke 4 attributen een link tag kan hebben, leg uit wat deze doen en voeg deze als voorbeeld toe op je website
+        href = locatie van de links
+        target = waar wordt de link geopend, zelfde tab, nieuwe tab of > blank window
+        rel = relatie tussen pagina waarop je bent en de link
+        referrerpolicy = of de gelinkte pagina te horen krijgt waar de gebruiker vandaan komt (zoekmachine, facebook, etc)
+            (voor voorbeeld zie boven)
+    
+
