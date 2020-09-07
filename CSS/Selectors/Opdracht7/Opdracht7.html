@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color:red;
+        }
+        p {
+            color:green;
+        }
+        .geel {
+            color:yellow;
+        }
+        #blauw {
+            color:blue;
+        }
+        p[class="attribute"] {
+            color:red;
+        }
+        p, span {
+            color: green;
+        }
+        div p {
+            color:yellow;
+        }
+        div>p {
+            color:blue;
+        }
+        div + p {
+            color:red;
+        }
+        div ~ span {
+            color:green;
+        }
+        .pseudo:hover {
+            color:yellow;
+        }
+        .selectme::selection {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    Universal Selector is rood
+    <p>Type Selector is groen</p>
+    <p class="geel">Class Selector is geel</p>
+    <p id="blauw">ID Selector is blauw</p>
+    <p class="attribute">Attribute Selector is rood</p>
+    <span>List Selector is groen</span>
+    <div>
+        <span><p>Descendant Selector is geel</p></span>
+    </div>
+    <div>
+        <p>Child Selector is blauw</p>
+    </div>
+    <p>Adjacent Selector is rood</p>
+    <span>Sibling Selector is groen</span>
+    <p class="pseudo">Pseudo Class Selector verandert naar geel als je erover hovert</p>
+    <p class="selectme">Pseudo Element Selector is blauw als je de tekst selecteert.</p>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer>p {
+            color:blue;
+        }
+        h1+p {
+            color:red;
+        }
+        * {
+            color:green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="outer">
+        <p>
+            Child Selector voorbeeld is blauw
+        </p>
+        <div>
+            <h1>Adjacent Selector</h1>
+            <p>Voorbeeld is rood</p>
+            <p>Universal selector voorbeeld is groen</p>
+        </div>
+    </div>
+    <!--
+        Opdracht 6
+Verder heb je ook nog de volgende selectors:
+● child selectors
+● adjacent selectors
+● general selectors
+Maak in een aparte html bestand voor elke selector een voorbeeld en maak een link in je
+antwoord naar dat html bestand. Geef in je antwoord ook aan wat de voordelen zijn van elk
+selector.
+
+● child selectors
+Selecteert alle gegeven elementen die DIRECT in het gegeven parent element zitten.
+Verschil met een descendant selector is dat deze alleen de direct onderliggende elementen pakt, en niet de verder geneste elementen.
+In dit voorbeeld is dat het element <p> in de "outer" div, maar niet het element <p> wat in div daarbinnen zit.
+
+● adjacent selectors
+Selecteert alle elementen die DIRECT volgen op het eerste element.
+Verschil met een child selector is dat deze niet onderliggend van het eerste element is, dwz geen parent/child relatie.
+In dit voorbeeld is dat het element <p> dat direct volgt op het element <h1>.
+
+● general selectors
+Ookwel universal selector, selecteert alle elementen.
+Deze wordt 'overschreven' door specifieke selectors en pakt zo eigenlijk alles op je page wat niet via een andere selector gepakt is.
+In dit voorbeeld is dat het <h1> element en het <p> element wat niet door de adjacent/child selectors is gepakt.
+
+    -->
+</body>
+</html>
