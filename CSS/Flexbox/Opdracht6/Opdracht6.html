@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            background-color:lightyellow;
+            align-items:flex-start;
+            height:750px;
+            width:1500px;
+            box-sizing: border-box;
+        }
+        .box {
+            background-color:lightblue;
+            margin:5px 0;
+            padding:30px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="width:100%"></div> <!-- Waarom gaat de width met 100% eroverheen?-->
+        <div class="box" style="width:40%"></div> 
+        <div class="box" style="width:50%"></div>
+        <div class="box" style="width:60%"></div>
+        <div class="box" style="width:20%"></div>
+        <div class="box" style="width:30%"></div>
+    </div>
+</body>
+</html>
