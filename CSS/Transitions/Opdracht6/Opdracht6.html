@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width:1000px;
+            height:300px;
+            margin:10px;
+            border: 4px solid black;
+        }
+        .card {
+            position:absolute;
+            height:200px;
+            width:150px;
+            padding:10px;
+            color:white;
+            top:10%;
+            left:30px;
+            background-color:grey;
+            border:2px solid black;
+            border-radius:20px;
+            transition-property:top,left,color;
+            transition-duration:0.5s, 0.5s, 0s;
+        }
+        #card2{
+            left:106px;
+        }
+        #card3{
+            left:182px;
+        }
+        #card4{
+            left:258px;
+        }
+        #card4:hover {
+            top:5%;
+        }
+        .card:hover~#card4 {
+            left:334px;
+            color:red;
+        }
+        #card3:hover {
+            top:5%;
+        }
+        .card:hover~#card3 {
+            left:258px;
+            color:red;
+        }
+        #card2:hover {
+            top:5%;
+        }
+        .card:hover~#card2 {
+            left:182px;
+            color:red;
+        }
+        #card1:hover {
+            top:5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <p>Article Sep 16, 2019</p>
+            <h2>Placeholder title</h2>
+            <br>
+            <p>Author: Kim Sing</p>
+        </div>
+        <div class="card" id="card2">
+            <p>Article Sep 16, 2019</p>
+            <h2>Placeholder title</h2>
+            <br>
+            <p>Author: Kim Sing</p>
+        </div>
+        <div class="card" id="card3">
+            <p>Article Sep 16, 2019</p>
+            <h2>Placeholder title</h2>
+            <br>
+            <p>Author: Kim Sing</p>
+        </div>
+        <div class="card" id="card4">
+            <p>Article Sep 16, 2019</p>
+            <h2>Placeholder title</h2>
+            <br>
+            <p>Author: Kim Sing</p>
+        </div>
+    </div>
+</body>
+</html>

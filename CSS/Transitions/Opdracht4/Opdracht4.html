@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position:relative;
+            height:500px;
+            width:1000px;
+            margin:50px;
+            border:thick solid black;
+            background-color:grey;
+        }
+        .content {
+            position:absolute;
+            top:50%;
+            left:50%;
+            height:30px;
+            width:100px;
+            padding:30px 0;
+            margin-top:-30px;
+            margin-left:-65px;
+            text-align:center;
+            border: thin solid black;
+            font-size:xx-large;
+        }
+        .container:hover #div1 {
+            top:0;
+            left:100%;
+            margin: 0 0 0 -100px;
+        }
+        .container:hover #div2 {
+            top:0;
+            left:0;
+            margin: 0;
+        }
+        .container:hover #div3 {
+            top:100%;
+            left:0;
+            margin-top:-92px;
+            margin-left:0;
+        }
+        #div1, #div2 {
+            transition-property: top, left, margin;
+            transition-duration: 1s;
+            transition-timing-function: ease, ease-in-out;
+        }
+        #div3 {
+            transition-property: top, left, margin-top, margin-left;
+            transition-duration: 1.5s, 1s;
+            /* transition-timing-function:ease; */
+            transition-delay: 2s, 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content" id="div1">1</div>
+        <div class="content" id="div2">2</div>
+        <div class="content" id="div3">3</div>
+    </div>
+</body>
+
+</html>

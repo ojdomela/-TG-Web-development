@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height:500px;
+            width:1000px;
+            margin:50px;
+            border:thick solid black;
+            background-color:grey;
+        }
+        .content {
+            position:relative;
+            right:440px;
+            height:30px;
+            width:100px;
+            padding:30px 0;
+            margin: 5px auto;
+            text-align:center;
+            border: thin solid black;
+            background-color:white;
+            transition-property: right, background-color, border-radius;
+            transition-duration:2s;
+        }
+        .container:hover .content {
+            right:-440px;
+            background-color:red;
+        }
+        .container:hover #div1 {
+            border-radius: 50%;
+        }
+        .container:hover #div2 {
+            border-radius:15px;
+        }
+        #div2 {
+            transition-timing-function:ease-in;
+        }
+        #div3 {
+            transition-timing-function:ease-out;
+        }
+        #div4 {
+            transition-timing-function:ease-in-out;
+        }
+        #div5 {
+            transition-timing-function:linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content" id="div1">1</div>
+        <div class="content" id="div2">2</div>
+        <div class="content" id="div3">3</div>
+        <div class="content" id="div4">4</div>
+        <div class="content" id="div5">5</div>
+    </div>
+</body>
+
+</html>

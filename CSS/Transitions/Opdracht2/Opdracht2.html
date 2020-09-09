@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height:500px;
+            width:500px;
+            margin:50px;
+            border:thick solid black;
+        }
+        .content {
+            height: 100px;
+            width: 100px;
+            margin: 50px;
+            border: thin solid black;
+            float: left;
+            transition-property:background-color, color;
+            transition-duration:2s;
+        }
+        .content:hover {
+            background-color:black;
+            color:white;
+        }
+        p {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <p>
+                Dit is content.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
