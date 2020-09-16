@@ -1,0 +1,23 @@
+body {
+    font-family:'Lobster', cursive;
+    background-color:grey;
+    text-align:center;
+}
+#home {
+    background-image: url(cooking.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+.popflex {
+    display:flex;
+}
+.popitem img {
+    width:100px;
+}
+.menuflex {
+    display:flex;
+}
+footer {
+    color:blue;
+    background-color:rgb(128, 179, 128);
+}
