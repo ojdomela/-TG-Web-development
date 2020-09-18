@@ -1,23 +1,167 @@
 body {
     font-family:'Lobster', cursive;
     background-color:grey;
+    margin: 0;
+}
+
+p {
+    font-size:large;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    padding: 8px;
+}
+
+button {
+    font-family: inherit;
+    padding: 5px;
+    width: 100px;
+    background-color: transparent;
+    color: inherit;
+    border: 1px solid rgb(128, 179, 128);
+    font-size: large;
+}
+
+.topnav {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color:white;
+    z-index:10;
+}
+
+.topnav ul {
+    display:flex;
+    
+    margin: 0;
+    justify-content:flex-end;
+}
+
+#home {
+    display:flex;
+    justify-content:space-evenly;
+    background-image: url(cooking.jpg);
+    background-position:center top;
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:rgb(97, 135, 216);
+}
+
+h1 {
+    text-align:left;
+    font-size:68px;
+    line-height: 0px;
+}
+
+h2 {
+    font-size:xx-large;
+    line-height:1.45;
     text-align:center;
 }
-#home {
-    background-image: url(cooking.jpg);
-    background-size:contain;
-    background-repeat:no-repeat;
+
+.cooking {
+    width:30%;
+    padding:25px;
 }
+
+.morebutton {
+    color: rgb(128, 179, 128);
+}
+
 .popflex {
-    display:flex;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
 }
+
+.popitem {
+    width:260px;
+    padding:15px;
+}
+
 .popitem img {
-    width:100px;
+    width:100%;
+    border-radius:50%;
 }
+
+.namecost {
+    display: flex;
+    justify-content: space-between;
+}
+
 .menuflex {
-    display:flex;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.menuitem {
+    width:250px;
+}
+
+.menuimg {
+    width:200px;
+    background-image: url(chef.webp);
+    background-repeat:no-repeat;
+    background-size: 200px 100%;
+}
+
 footer {
-    color:blue;
+    text-align:left;
+    display:flex;
+    justify-content:space-evenly;
+    color:rgb(97, 135, 216);
     background-color:rgb(128, 179, 128);
+    letter-spacing:1.5px;
+    height:30%;
+}
+
+.bottomnav {
+    margin-bottom: 20px;
+    padding:15px;
+}
+
+.bottomnav ul {
+    padding:0px;
+    margin:0;
+}
+
+.contact {
+    margin-bottom: 20px;
+    padding:15px;
+}
+
+
+
+
+/*
+--575
+576-767
+768-991
+992-1199
+1200+
+*/
+
+@media (max-width:575px) {
+    .emptydiv {
+        display:none;
+    }
+}
+
+@media (max-width:767px) {
+    .topnav ul {
+        justify-content:space-evenly;
+    }
+}
+
+@media (max-width:991px) {
+    .menuimg {
+        display:none;
+    }
+    .menuflex {
+        flex-wrap:wrap;
+    }
 }

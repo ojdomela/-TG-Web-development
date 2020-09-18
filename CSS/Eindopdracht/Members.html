@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+            color: rgb(97, 135, 216);
+        }
+        .members {
+            width: 90%;
+            margin: 0 auto;
+            border-spacing: 1px 0;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: grey;
+        }
+        th {
+            text-align: left;
+        }
+        th,
+        td {
+            border: .5px solid rgb(97, 135, 216);
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .fieldset {
+            display: flex;
+            flex-flow: row wrap;
+            border: none;
+        }
+        .fieldbox {
+            display: inline-flex;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+            padding: 5px;
+        }
+        .fieldbox:nth-child(1) {
+            flex-basis: 45%;
+        }
+        .fieldbox:nth-child(2) {
+            flex-basis: 25%;
+        }
+        .fieldbox:nth-child(3) {
+            flex-basis: 15%;
+        }
+        input {
+            background-color: lightblue;
+            border: none;
+            width:100%;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/HTML/Eindopdracht/Profiel.html">Profile</a></li>
+                <li><a href="/HTML/Eindopdracht/Members.html">Members</a></li>
+            </ul>
+        </nav>
+    </div> -->
+    <main>
+        <h1>Members</h1>
+        <table class="members">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Surname</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Klaas</td>
+                    <td>Jan</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>Jennis</td>
+                    <td>Lee</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Cameron</td>
+                    <td>Lion</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Anthony</td>
+                    <td>Bos</td>
+                    <td>66</td>
+                </tr>
+                <tr>
+                    <td>Frits</td>
+                    <td>Kosnovia</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>Venezuela</td>
+                    <td>Kosnovia</td>
+                    <td>57</td>
+                </tr>
+                <tr>
+                    <td>Bosnia</td>
+                    <td>Kovic</td>
+                    <td>43</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Additional Information</h2>
+        <form method="post">
+            <div class="fieldset">
+                <div class="fieldbox">
+                    <sup><label for="firstname">First Name:</label></sup>
+                    <input type="text" id="firstname" name="firstname">
+                </div>
+                <div class="fieldbox">
+                    <sup><label for="surname">Surname:</label></sup>
+                    <input type="text" id="surname" name="surname">
+                </div>
+                <div class="fieldbox">
+                    <sup><label for="age">Age:</label></sup>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div class="fieldbox">
+                    <sup><label for="username">Username:</label></sup>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="fieldbox">
+                    <sup><label for="email">E-mail:</label></sup>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="fieldbox">
+                    <sup><label for="address">Address:</label></sup>
+                    <input type="text" name="address" id="address">
+                </div>
+                <div class="fieldbox">
+                    <sup><label for="city">City:</label></sup>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="fieldbox">
+                    <sup><label for="country">Country:</label></sup>
+                    <input type="text" name="country" id="country">
+                </div>
+                <div class="fieldbox">
+                    <sup><label for="postalcode">Postalcode:</label></sup>
+                    <input type="text" name="postalcode" id="postalcode">
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
