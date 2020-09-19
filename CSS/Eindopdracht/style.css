@@ -4,26 +4,49 @@ body {
     margin: 0;
 }
 
-p {
+section p {
     font-size:large;
 }
 
 nav ul {
     list-style-type: none;
+    padding:0;
 }
 
-nav li {
+.topnav li {
     padding: 8px;
+}
+li a {
+    text-decoration:none;
+    color:inherit;
 }
 
 button {
     font-family: inherit;
+    margin:4px;
     padding: 5px;
     width: 100px;
     background-color: transparent;
-    color: inherit;
+    color: rgb(97, 135, 216);
     border: 1px solid rgb(128, 179, 128);
     font-size: large;
+    transition-property: color, background-color, border-color;
+    transition-duration: 1s;
+}
+
+button:focus {
+    outline:none;
+}
+
+.buybutton:hover {
+    color: rgb(128, 179, 128);
+    background-color: rgb(97, 135, 216);
+}
+
+.morebutton:hover {
+    color: rgb(97, 135, 216);
+    background-color: rgb(128, 179, 128);
+    border-color: rgb(97, 135, 216);
 }
 
 .topnav {
@@ -36,7 +59,6 @@ button {
 
 .topnav ul {
     display:flex;
-    
     margin: 0;
     justify-content:flex-end;
 }
@@ -51,13 +73,13 @@ button {
     color:rgb(97, 135, 216);
 }
 
-h1 {
+section h1 {
     text-align:left;
     font-size:68px;
     line-height: 0px;
 }
 
-h2 {
+section h2 {
     font-size:xx-large;
     line-height:1.45;
     text-align:center;
@@ -68,8 +90,18 @@ h2 {
     padding:25px;
 }
 
+.buttonflex {
+    display:flex;
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+}
+
 .morebutton {
     color: rgb(128, 179, 128);
+}
+
+#popular {
+    margin-top:36px;
 }
 
 .popflex {
@@ -112,6 +144,7 @@ h2 {
 footer {
     text-align:left;
     display:flex;
+    flex-wrap: wrap;
     justify-content:space-evenly;
     color:rgb(97, 135, 216);
     background-color:rgb(128, 179, 128);
@@ -137,25 +170,12 @@ footer {
 
 
 
-/*
---575
+/* --575
 576-767
 768-991
 992-1199
-1200+
-*/
+1200+ */
 
-@media (max-width:575px) {
-    .emptydiv {
-        display:none;
-    }
-}
-
-@media (max-width:767px) {
-    .topnav ul {
-        justify-content:space-evenly;
-    }
-}
 
 @media (max-width:991px) {
     .menuimg {
@@ -163,5 +183,41 @@ footer {
     }
     .menuflex {
         flex-wrap:wrap;
+    }
+}
+
+@media (max-width:767px) {
+    .topnav ul {
+        justify-content:space-evenly;
+    }
+    .emptydiv {
+        display:none;
+    }
+    .contact, .bottomnav {
+        text-align:center;
+    }
+    .cooking {
+        width: 40%;
+        margin: 0 auto;
+        text-align:center;
+    }
+    .cooking h1 {
+        font-size:48px;
+        text-align:center;
+    }
+    .buttonflex {
+        justify-content:center;
+        flex-wrap:wrap;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:575px) {
+    .cooking {
+        width: 90%;
+        margin: 0;
+    }
+    .buttonflex {
+        width:100%;
     }
 }
