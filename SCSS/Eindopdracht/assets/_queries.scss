@@ -1,0 +1,79 @@
+
+@media (max-width:991px) {
+    .menuimg {
+        display:none;
+    }
+    .menuflex {
+        flex-wrap:wrap;
+    }
+}
+
+@media (max-width:767px) {
+    .topnav ul {
+        justify-content:space-evenly;
+    }
+    .emptydiv {
+        display:none;
+    }
+    .contact, .bottomnav {
+        text-align:center;
+    }
+    .cooking {
+        width: 40%;
+        margin: 0 auto;
+        text-align:center;
+    }
+    .cooking h1 {
+        font-size:48px;
+        text-align:center;
+    }
+    .buttonflex {
+        justify-content:center;
+        flex-wrap:wrap;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:575px) {
+    .cooking {
+        width: 90%;
+        margin: 0;
+    }
+    .buttonflex {
+        width:100%;
+    }
+}
+
+////
+
+
+@media (max-width:991px) {
+    form {
+        width:80%;
+    }
+}
+
+@media (max-width:767px) {
+    .fieldbox:nth-child(n) {
+        flex: 1 1 100%;
+    }
+    .sidenav {
+        display:none;
+        width:100%;
+    }
+    .membersmain {
+        margin: 36px 0 0;
+    }
+    .topnav {
+        display: flex;
+    }
+    .closebtn {
+        display:inline;
+    }
+}
+
+@media (max-width:575px) {
+    form {
+        width: 100%;
+    }
+}

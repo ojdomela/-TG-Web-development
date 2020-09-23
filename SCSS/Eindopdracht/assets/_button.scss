@@ -1,0 +1,33 @@
+button {
+    font-family: inherit;
+    margin: 4px;
+    padding: 5px;
+    width: 100px;
+    background-color: transparent;
+    color: $secondarycolor;
+    border: 1px solid $primarycolor;
+    font-size: $fontsize;
+    transition-property: color, background-color, border-color;
+    transition-duration: 1s;
+
+
+    &:focus {
+        outline:none;
+    }
+
+    .buybutton:hover {
+        color: $primarycolor;
+        background-color: $secondarycolor;
+    }
+
+    .morebutton {
+        color: rgb(128, 179, 128);
+  
+        .morebutton:hover {
+            color: $secondarycolor;
+            background-color: $primarycolor;
+            border-color: $secondarycolor;
+        }
+    }
+}
+

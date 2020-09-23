@@ -1,0 +1,25 @@
+footer {
+    text-align:left;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    color:rgb(97, 135, 216);
+    background-color:rgb(128, 179, 128);
+    letter-spacing:1.5px;
+    height:30%;
+
+    .bottomnav {
+        margin-bottom: 20px;
+        padding:15px;
+        
+        .bottomnav ul {
+            padding:0px;
+            margin:0;
+        }
+    }
+
+    .contact {
+        margin-bottom: 20px;
+        padding:15px;
+    }
+}
