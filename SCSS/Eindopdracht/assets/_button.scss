@@ -1,23 +1,22 @@
 @import 'colors';
 @import 'layout';
 
-button {
-    %cookingbutton {
-        margin: 4px;
-        padding: 5px;
-        width: 100px;   
-        color: $secondarycolor;
-        border: 1px solid $primarycolor; 
-        font-family: inherit;
-        background-color: transparent;
-        font-size: $fontsize;
-        transition-property: color, background-color, border-color;
-        transition-duration: 1s;
-    }
+%cookingbutton {
+    margin: 4px;
+    padding: 5px;
+    width: 100px;   
+    color: $secondarycolor;
+    border: 1px solid $primarycolor; 
+    font-family: inherit;
+    background-color: transparent;
+    font-size: $fontsize;
+    transition-property: color, background-color, border-color;
+    transition-duration: 1s;
+}
 
-    &:focus {
-        outline:none;
-    }
+button:focus {
+    outline:none;
+    
 }
 
 .buybutton {

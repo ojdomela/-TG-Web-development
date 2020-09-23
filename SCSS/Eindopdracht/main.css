@@ -10,7 +10,7 @@ h1, h2 {
   text-align: center;
 }
 
-button .buybutton, button .morebutton {
+.buybutton, .morebutton {
   margin: 4px;
   padding: 5px;
   width: 100px;
@@ -184,6 +184,12 @@ h1, h2 {
   text-align: center;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 nav button {
   background-color: transparent;
   border: none;
@@ -201,9 +207,6 @@ nav ul li {
 }
 
 .topnav {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   background-color: white;
   z-index: 3;
@@ -222,6 +225,44 @@ nav ul li {
 .topnav ul li a {
   text-decoration: none;
   color: inherit;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  z-index: 5;
+  background-color: #4B86CB;
+}
+
+.sidenav button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 42px;
+}
+
+.sidenav h2 {
+  margin: 8px;
+}
+
+.sidenav ul {
+  margin-left: 15%;
+}
+
+.tempnav {
+  display: none;
+  width: 100%;
+  height: 36px;
+  background-color: #4B86CB;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  z-index: 3;
+}
+
+.tempnav i {
+  position: relative;
+  z-index: 7;
 }
 
 @media (max-width: 991px) {
@@ -323,12 +364,12 @@ table td {
   border: 0.5px solid #6187d8;
 }
 
-body {
+.cookingbody {
   font-family: 'Lobster', cursive;
   background-color: grey;
 }
 
-.banner {
+.cookingbody .banner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,18 +383,18 @@ body {
   color: #6187d8;
 }
 
-.banner .cooking {
+.cookingbody .banner .cooking {
   width: 30%;
   padding: 25px;
 }
 
-.banner .cooking h1 {
+.cookingbody .banner .cooking h1 {
   text-align: left;
   font-size: 68px;
   line-height: 0px;
 }
 
-.banner .cooking .buttonflex {
+.cookingbody .banner .cooking .buttonflex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,16 +405,16 @@ body {
       flex-wrap: nowrap;
 }
 
-.popular {
+.cookingbody .popular {
   margin-top: 36px;
 }
 
-.popular h2 {
+.cookingbody .popular h2 {
   font-size: xx-large;
   line-height: 1.45;
 }
 
-.popular .popflex {
+.cookingbody .popular .popflex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,17 +425,17 @@ body {
       flex-wrap: wrap;
 }
 
-.popular .popflex .popitem {
+.cookingbody .popular .popflex .popitem {
   width: 250px;
   padding: 20px;
 }
 
-.popular .popflex .popitem img {
+.cookingbody .popular .popflex .popitem img {
   width: 100%;
   border-radius: 50%;
 }
 
-.namecost {
+.cookingbody .namecost {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,7 +444,7 @@ body {
           justify-content: space-between;
 }
 
-.menuflex {
+.cookingbody .menuflex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,68 +453,30 @@ body {
           justify-content: space-evenly;
 }
 
-.menuflex .menuitem {
+.cookingbody .menuflex .menuitem {
   width: 250px;
 }
 
-.menuflex .menuimg {
+.cookingbody .menuflex .menuimg {
   width: 200px;
   background-image: url(chef.webp);
   background-repeat: no-repeat;
   background-size: 200px 100%;
 }
 
-body {
+.membersbody {
   font-family: sans-serif;
 }
 
-body h1, body h2 {
+.membersbody h1, .membersbody h2 {
   color: #6187d8;
 }
 
-body header {
+.membersbody header {
   color: #C5DEEA;
 }
 
-body header .tempnav {
-  display: none;
-  width: 100%;
-  height: 36px;
-  background-color: #4B86CB;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  z-index: 3;
-}
-
-body header .tempnav i {
-  position: relative;
-  z-index: 7;
-}
-
-body header .sidenav {
-  height: 100%;
-  width: 250px;
-  z-index: 5;
-  background-color: #4B86CB;
-}
-
-body header .sidenav button {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 42px;
-}
-
-body header .sidenav h2 {
-  margin: 8px;
-}
-
-body header .sidenav ul {
-  margin-left: 15%;
-}
-
-body main {
+.membersbody main {
   margin-left: 250px;
 }
 /*# sourceMappingURL=main.css.map */
