@@ -1,0 +1,100 @@
+body {
+  font-family: 'Lobster', cursive;
+  background-color: grey;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-image: url(cooking.jpg);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #6187d8;
+}
+
+.banner .cooking {
+  width: 30%;
+  padding: 25px;
+}
+
+.banner .cooking h1 {
+  text-align: left;
+  font-size: 68px;
+  line-height: 0px;
+}
+
+.banner .cooking .buttonflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.popular {
+  margin-top: 36px;
+}
+
+.popular h2 {
+  font-size: xx-large;
+  line-height: 1.45;
+}
+
+.popular .popflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.popular .popflex .popitem {
+  width: 250px;
+  padding: 20px;
+}
+
+.popular .popflex .popitem img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.namecost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menuflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.menuflex .menuitem {
+  width: 250px;
+}
+
+.menuflex .menuimg {
+  width: 200px;
+  background-image: url(chef.webp);
+  background-repeat: no-repeat;
+  background-size: 200px 100%;
+}
+/*# sourceMappingURL=cooking.css.map */

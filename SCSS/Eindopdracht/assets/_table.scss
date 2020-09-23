@@ -1,18 +1,18 @@
-.members {
+table {
     width: 90%;
     margin: 0 auto;
     border-spacing: 1px 0;
-}
+    
+    tbody tr:nth-child(odd) {
+        background-color: #a0aec0;
+    }
 
-tbody tr:nth-child(odd) {
-    background-color: #a0aec0;
-}
+    th {
+        text-align: left;
+    }
 
-th {
-    text-align: left;
-}
-
-th,
-td {
-    border: .5px solid rgb(97, 135, 216);
+    th,
+    td {
+        border: .5px solid rgb(97, 135, 216);
+    }
 }

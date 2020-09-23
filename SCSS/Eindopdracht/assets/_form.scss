@@ -1,65 +1,64 @@
 form {
     width: 60%;
     margin: 0 auto;
-}
 
-.fieldset {
-    display: flex;
-    flex-flow: row wrap;
-    border: none;
-}
+    .fieldset {
+        display: flex;
+        flex-flow: row wrap;
+        border: none;
 
-.fieldbox {
-    display: inline-flex;
-    flex-flow: column nowrap;
-    align-items: flex-start;
-    padding: 5px;
-}
+        .fieldbox {
+            display: inline-flex;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+            padding: 5px;
+            
+            input {
+                background-color: lightblue;
+                border: none;
+                width: 100%;
+                border-radius: 4px;
+            }
 
-.fieldbox:nth-child(1) {
-    flex: 1 1 55%;
-}
+            &:nth-child(1) {
+                flex: 1 1 55%;
+            }
 
-.fieldbox:nth-child(2) {
-    flex: 1 1 25%;
-}
+            &:nth-child(3) {
+                flex: 1 1 10%;
+            }
 
-.fieldbox:nth-child(3) {
-    flex: 1 1 10%;
-}
+            &:nth-child(4) {
+                flex: 1 1 35%;
+            }
 
-.fieldbox:nth-child(4) {
-    flex: 1 1 35%;
-}
+            &:nth-child(5) {
+                flex: 1 1 25%;
+            }
+            
+            &:nth-child(2) {
+                flex: 1 1 25%;
+            }
 
-.fieldbox:nth-child(5) {
-    flex: 1 1 25%;
-}
+            &:nth-child(7) {
+                flex: 1 1 100%;
+            }
+            
+            &:nth-child(6) {
+                flex: 1 1 30%;
+            }
 
-.fieldbox:nth-child(6) {
-    flex: 1 1 30%;
-}
+            &:nth-child(8) {
+                flex: 1 1 30%;
+            }
 
-.fieldbox:nth-child(7) {
-    flex: 1 1 100%;
-}
+            &:nth-child(9) {
+                flex: 1 1 30%;
+            }
 
-.fieldbox:nth-child(8) {
-    flex: 1 1 30%;
+            &:nth-child(10) {
+                flex: 1 1 30%;
+            }
+        }
+    }
 }
-
-.fieldbox:nth-child(9) {
-    flex: 1 1 30%;
-}
-
-.fieldbox:nth-child(10) {
-    flex: 1 1 30%;
-}
-
-input {
-    background-color: lightblue;
-    border: none;
-    width: 100%;
-    border-radius: 4px;
-}
-
