@@ -1,0 +1,14 @@
+Jens:
+
+Good:
+
+-I understood SASS very well, both in concept and in practice. I was able to share what I learned too, on slack and in the links doc.
+
+-Learning about frameworks and Bootstrap was very informative, and it gave me a much better understanding of parts of programming that I knew about only vaguely.
+
+
+Bad:
+
+I spent way too much time reading about bootstrap instead of actually practicing with it. I should have just practiced more and compared with other people directly, and spent less time reading.
+
+Working from home was not great for my focus, especially in the morning. I don't know if it's because of the bike ride on the way or the social pressure of other people at work. It's not a problem right now since I can still keep up fine, but it could be a problem if it goes fully remote.
