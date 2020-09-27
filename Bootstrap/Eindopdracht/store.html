@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <script src="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
-<body>
-    
+
+<body class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-white" href="#">Super Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link text-white-50" href="#">Shop</a>
+                <a class="nav-link text-white-50" href="#">Contact</a>
+            </div>
+        </div>
+        <div class="navbar-brand">
+            <img src="assets/TG_Logo.png" alt="..." class="img-fluid">
+        </div>
+    </nav>
+    <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+        <strong>Please do not forget to buy an item!</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <h1 class="text-center">Super Store</h1>
+    <div class="row  justify-content-center">
+        <div class="col-sm-4 col-md-3 col-lg-3 bg-light">
+            <img src="assets/whiteshirt.webp" class="img-fluid">
+            <p><strong>Shirt description lead</strong></p>
+            <p>Shirt description long</p>
+            <button type="button" class="btn btn-primary btn-lg">Add to Cart</button>
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-3 bg-light">
+            <img src="assets/whiteshirt.webp" class="img-fluid">
+            <p><strong>Shirt description lead</strong></p>
+            <p>Shirt description long</p>
+            <button type="button" class="btn btn-primary btn-lg">Add to Cart</button>
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-3 bg-light">
+            <img src="assets/whiteshirt.webp" class="img-fluid">
+            <p><strong>Shirt description lead</strong></p>
+            <p>Shirt description long</p>
+            <button type="button" class="btn btn-primary btn-lg">Add to Cart</button>
+        </div>
+    </div>
 </body>
+
 </html>
