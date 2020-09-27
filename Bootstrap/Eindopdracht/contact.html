@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/bootstrap.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
-        <title>Document</title>
-    </head>
-<body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-secondary">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand text-white" href="#">Navbar</a>
+        <a class="navbar-brand text-white" href="#">Super Store</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,9 +24,10 @@
                 <a class="nav-link text-white-50" href="#">Shop</a>
                 <a class="nav-link text-white-50" href="#">Contact</a>
             </div>
-            <div class="navbar-brand">
-                <img src="assets/TG_Logo.png" alt="..." class="img-fluid">
-            </div>
+        </div>
+        <div class="navbar-brand">
+            <img src="assets/TG_Logo.png" alt="..." class="img-fluid">
+        </div>
     </nav>
     <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
         <strong>Please do not forget to buy an item!</strong>
@@ -32,5 +35,62 @@
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
+    <form>
+        <div class="form-group row">
+            <label for="inputname3" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputname3">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputcomment3" class="col-sm-2 col-form-label">Message</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" id="inputcomment3"></textarea>
+            </div>
+        </div>
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            First radio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            Second radio
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3"
+                            disabled>
+                        <label class="form-check-label" for="gridRadios3">
+                            Third disabled radio
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button t
+                ype="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </div>
+    </form>
+    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA3coEQe-On-eu_mXjj5wykcetC4NktyX8
+    &q=TechGrounds,Osdorpplein,Amsterdam,Nederland" allowfullscreen>
+    </iframe>
 </body>
+
 </html>
