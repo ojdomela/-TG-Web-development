@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="number" id="input">
+    <button class="btn" onclick='checkNumber()'>Button</button>
+    <div>
+        <span id="label"></span>
+    </div>
+    <script>
+        function checkNumber() {
+            let input = document.getElementById('input').value;
+            document.getElementById('label').textContent = '';
+            if (input == 3) {
+                document.getElementById('label').textContent = 'Het ingevoerde getal is gelijk aan 3.';
+            } else if (input >= 11) {
+                document.getElementById('label').textContent = 'Het ingevoerde getal is gelijk aan of groter dan 11';
+            } else if (input > 4) {
+                document.getElementById('label').textContent = 'Het ingevoerde getal is groter dan 4';
+            } else if (input < 3) {
+                document.getElementById('label').textContent = 'Het ingevoerde getal is kleiner dan 3';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Translate months</h1>
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">translate</button>
+    <div id="translatedMonth"></div>
+    <script>
+        function translateMonth() {
+            let input = document.getElementById('number').value;
+            if (input == 1) {
+                document.getElementById('translatedMonth').innerText = 'Januari';
+            } else if (input == 2) {
+                document.getElementById('translatedMonth').innerText = 'Februari';
+            } else if (input == 3) {
+                document.getElementById('translatedMonth').innerText = 'Maart';
+            } else if (input == 4) {
+                document.getElementById('translatedMonth').innerText = 'April';
+            } else if (input == 5) {
+                document.getElementById('translatedMonth').innerText = 'Mei';
+            } else if (input == 6) {
+                document.getElementById('translatedMonth').innerText = 'Juni';
+            } else if (input == 7) {
+                document.getElementById('translatedMonth').innerText = 'Juli';
+            } else if (input == 8) {
+                document.getElementById('translatedMonth').innerText = 'Augustus';
+            } else if (input == 9) {
+                document.getElementById('translatedMonth').innerText = 'September';
+            } else if (input == 10) {
+                document.getElementById('translatedMonth').innerText = 'Oktober';
+            } else if (input == 11) {
+                document.getElementById('translatedMonth').innerText = 'November';
+            } else if (input == 12) {
+                document.getElementById('translatedMonth').innerText = 'December';
+            } else {
+                document.getElementById('translatedMonth').innerText = 'Dat is geen maand.';
+            }
+        }
+    </script>
+</body>
+</html>
