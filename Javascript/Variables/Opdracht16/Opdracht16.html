@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    sentence = This string is a sentence to test different string methods.
+    <br>
+    1. charAt() - sentence.charAt(3) = s - selecteert 4e character(dus ook spatie). Begint bij 0.
+    <br>
+    2. concat() - sentence.concat(' This is an extra test string after the first test string.') - zet de gegeven string achter de huidige zin en selecteert het resultaat.
+    <br>
+    3. slice() - sentence.slice(0, 33) = This string is a sentence to test - Pakt een stuk van de string met begin en eind-index als parameter.
+    <br> 
+    4. split() - Zet de string in een array, met alles tussen de gegeven items in als 1 item in het array. - sentence.split(' ') = Array of single words. sentence.split('') = Array of single letters. 
+    <br> 
+    5. substr() - sentence.substr(29, 4) = test - Werkt net als slice() om een stuk van de string te selecteren, maar dan met een begin-index en een lengte ipv begin + eind-index als parameters.
+    
+    <script>
+        const sentence = 'This string is a sentence to test different string methods.'
+        let text = sentence.charAt(3);
+        console.log(text);
+        text = sentence.concat(' This is an extra test string after the first test string.');
+        console.log(text);
+        text = sentence.slice(0, 33);
+        console.log(text);
+        text = sentence.split(' ');
+        console.log(text[6]);
+        text = sentence.substr(29, 4);
+        console.log(text);
+
+    </script>
+</body>
+</html>
