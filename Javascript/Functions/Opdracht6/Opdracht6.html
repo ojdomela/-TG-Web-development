@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <p id="answer"></p>
+    <button onclick="answer()">button</button>
+    <script>
+        function answer() {
+            const names = ["John", "Olly", "Mo", "Hendrik", "Tony", "Irus", "Jan", "Peter"];
+            let randomnr = () => names[Math.round(Math.random() * 7)];
+            let guess = randomnr();
+            console.log(guess);
+            switch (guess) {
+                default:
+                    document.getElementById('answer').textContent = 'Onbekend in ons systeem!';
+                    break;
+                case 'John':
+                    document.getElementById('answer').textContent = 'Dit is een bekende van ons: ' + guess;
+                    break;
+                case 'Olly':
+                    document.getElementById('answer').textContent = 'Dit is een bekende van ons: ' + guess;
+                    break;
+                case 'Mo':
+                    document.getElementById('answer').textContent = 'Dit is een bekende van ons: ' + guess;
+                    break;
+                case 'Hendrik':
+                    document.getElementById('answer').textContent = 'Dit is een bekende van ons: ' + guess;
+                    break;
+                case 'Tony':
+                    document.getElementById('answer').textContent = 'Dit is een bekende van ons: ' + guess;
+            }
+        }
+    </script>
+</body>
+
+</html>

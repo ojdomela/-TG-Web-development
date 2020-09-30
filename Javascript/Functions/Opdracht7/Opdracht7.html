@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Vul meerdere parameters in hieronder en verwerk ze met de functie van de button</p>
+    <input type="number" name="number" id="inputA">
+    <input type="number" name="number" id="inputB">
+    <button
+        onclick="multipleParameters(document.getElementById('inputA').value, document.getElementById('inputB').value)">
+        One button, two inputs!
+    </button>
+    <p id="textA"></p>
+    <p id="textB"></p>
+    <p>Een rest parameter is de laatste parameter van een gegeven functie met 3 puntjes ervoor. Dit geeft aan dat je zo veel parameters mee kan geven als je wil, NA de normaal meegegeven parameters, en dat ze als array in de functie gebruikt worden.</p>
+    <textarea rows="5" cols="100" id="inputC"></textarea>
+    <button onclick="wordCount()">Word Counter</button>
+    <p id="textC"></p>
+    <script>
+        function wordCount() {
+            let count = document.getElementById('inputC').value.split(' ');
+            restParameters(...count);
+        }
+
+        function restParameters (...c) {
+            document.getElementById('textC').textContent = 'Je hebt ' + c.length + ' woorden ingevoerd.'
+        }
+        function multipleParameters(a, b) {
+            let outputA = 'The first number is: ' + a;
+            let outputB = 'The second number is: ' + b;
+            document.getElementById('textA').textContent = outputA;
+            document.getElementById('textB').textContent = outputB;
+        }
+    </script>
+</body>
+
+</html>
