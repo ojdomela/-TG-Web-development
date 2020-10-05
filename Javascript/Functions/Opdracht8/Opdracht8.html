@@ -245,11 +245,12 @@
                 let ned = parseFloat(nedArray[i].value);
                 let talen = (eng + ned) / 2;
                 let beta = (wis + nat) / 2;
+                let combo = (talen + beta) / 2;
 
                 talenArray[i].textContent = talen;
                 betaArray[i].textContent = beta;
 
-                if (talen < 6.5 || beta < 6.5) {
+                if (combo < 6.5) {
                     comboArray[i].textContent = 'Nee';
                     comboArray[i].style.background = 'red';
                 } else {
