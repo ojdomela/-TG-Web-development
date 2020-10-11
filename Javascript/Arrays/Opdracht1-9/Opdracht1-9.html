@@ -12,7 +12,7 @@
         console.log(lostNumbers);
         
         let fruitArray = [];
-        fruitArray = ["Appel", "Aardbei", "Banaan", "Mandarijn", "Tomaat"]
+        fruitArray = ["Appel", "Banaan", "Aardbei", "Mandarijn", "Tomaat"]
         console.log(fruitArray);
 
         console.log(fruitArray[0]);
@@ -22,7 +22,36 @@
         let index = Math.floor(Math.random() * lostNumbers.length);
         console.log(fruitArray[index % 5]);
 
-        
+        fruitArray.push("Peer");
+        console.log(fruitArray[5]);
+        // Voegt "Peer" toe aan het einde van fruitArray 
+
+        console.log(fruitArray.pop());
+        // Haalt laatste element weg uit fruitArray en returnt dat element
+
+        console.log(fruitArray.shift());
+        // Haalt eerste element weg uit fruitArray en returnt dat element
+
+        let fruitSalad = fruitArray.slice(0, 3);
+        console.log(fruitSalad);
+        // Selecteert de elementen op gegeven index van fruitArray. Je doet geen tomaat in je fruitsalade.
+
+        fruitArray.splice(3, 1, 'Peer');
+        console.log(fruitArray);
+        // Verandert het array op gegeven index door items te verwijderen en/of er in te zetten
+
+        fruitArray.sort();
+        console.log(fruitArray);
+        // Sorteert het array. Standaard voor strings is alfabetisch maar je kan er ook je eigen sorteer functies voor meegeven
+
+        console.log(fruitArray.length);
+
+        fruitArray.splice(3, 1, 'Sinaasappel');
+
+        fruitArray.splice(0, 1, 'Mandarijn');
+        fruitArray.splice(2, 1, 'Aardbei');
+        console.log(fruitArray);
+                
     </script>
 </body>
 </html>

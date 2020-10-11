@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const randomNumbers = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6];
+        
+        for (i=0; i < randomNumbers.length; i++) {
+            for (a=0; a < randomNumbers.length - i; a++) {
+                if (randomNumbers[a] > randomNumbers[a + 1]) {
+                    let swapto2 = randomNumbers[a];
+                    let swapto1 = randomNumbers[a + 1];
+                    randomNumbers.splice(a, 2, swapto1, swapto2)
+                }
+            }
+        }
+        console.log(randomNumbers);
+    </script>
+</body>
+
+</html>

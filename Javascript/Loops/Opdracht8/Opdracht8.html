@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div id="answer">0, 0, 1</div>
+    <script>
+        const fibonacci = [0, 0, 1];
+        let lastvalue = 0;
+        let currentvalue = 1;
+        for (i=0; i < 51; i++) {
+            let newvalue = currentvalue + lastvalue;
+            fibonacci.push(newvalue);
+            console.log(newvalue);
+            lastvalue = currentvalue;
+            currentvalue = newvalue;
+            document.getElementById('answer').textContent += ', ' + newvalue;
+        }
+    </script>
+</body>
+</html>
