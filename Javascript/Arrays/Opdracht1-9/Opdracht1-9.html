@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lostNumbers = [];
+        lostNumbers = [4, 8, 1, 5, 1, 6, 2, 3, 4, 2];
+        console.log(lostNumbers);
+        
+        let fruitArray = [];
+        fruitArray = ["Appel", "Aardbei", "Banaan", "Mandarijn", "Tomaat"]
+        console.log(fruitArray);
+
+        console.log(fruitArray[0]);
+
+        console.log(fruitArray[1]);
+
+        let index = Math.floor(Math.random() * lostNumbers.length);
+        console.log(fruitArray[index % 5]);
+
+        
+    </script>
+</body>
+</html>
