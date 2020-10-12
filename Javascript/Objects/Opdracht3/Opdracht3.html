@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="clubs" class="clubs"></div>
+    <script>
+        function sportsclub(clubname, sportstype, membercount) {
+            this.name = clubname;
+            this.type = sportstype;
+            this.members = membercount;
+        }
+
+        let ajax = new sportsclub('Ajax', 'voetbal', 21000);
+        let feyenoord = new sportsclub('Feyenoord', 'voetbal', 17000);
+        let psv = new sportsclub('PSV', 'voetbal', 13000)
+        let az = new sportsclub('AZ', 'voetbal', 9000);
+    
+        let eredivisie = [ajax, feyenoord, psv, az];
+
+        for (i=0; i < eredivisie.length; i++) {
+            console.log(eredivisie[i].name);
+        }
+    </script>
+</body>
+
+</html>

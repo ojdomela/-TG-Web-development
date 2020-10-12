@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="clubs" class="clubs"></div>
+    <script>
+        function sportsclub(clubname, sportstype, membercount, contactinfo) {
+            this.name = clubname;
+            this.type = sportstype;
+            this.members = membercount;
+            this.contactinfo = contactinfo;
+        }
+
+
+        function contactinfo(address, phonenumber, contactperson) {
+            this.address = address;
+            this.phonenumber = phonenumber;
+            this.contactperson = contactperson;
+        }
+
+        let ajaxcontact = new contactinfo('Johan Cruyff Arena', '+31 20 123 45 67', 'Jan Janssen');
+        
+        let ajax = new sportsclub('ajax', 'voetbal', 110000, ajaxcontact);
+        console.log(ajax.name);
+        console.log(ajax.type);
+        console.log(ajax.members);
+        console.log(ajax.contactinfo.address);
+        console.log(ajax.contactinfo.phonenumber);
+        console.log(ajax.contactinfo.contactperson);
+    </script>
+</body>
+
+</html>

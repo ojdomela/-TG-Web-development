@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clubs" class="clubs"></div>
+    <script>
+        function sportsclub(clubname, sportstype, membercount) {
+            this.name = clubname;
+            this.type = sportstype;
+            this.members = membercount;
+        }
+
+        let ajax = new sportsclub('ajax', 'voetbal', 110000);
+        console.log(ajax.name);
+        console.log(ajax.type);
+        console.log(ajax.members);
+    </script>
+</body>
+</html>
