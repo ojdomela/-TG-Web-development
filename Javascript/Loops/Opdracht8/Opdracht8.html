@@ -8,16 +8,16 @@
 <body>
     <div id="answer">0, 0, 1</div>
     <script>
-        const fibonacci = [0, 0, 1];
-        let lastvalue = 0;
-        let currentvalue = 1;
+        // const fibonacci = [0, 0, 1];
+        let lastvalue = fibonacci[1];
+        let currentvalue = fibonacci[2];
         for (i=0; i < 51; i++) {
             let newvalue = currentvalue + lastvalue;
-            fibonacci.push(newvalue);
+            // fibonacci.push(newvalue);
             console.log(newvalue);
+            document.getElementById('answer').textContent += ', ' + newvalue;
             lastvalue = currentvalue;
             currentvalue = newvalue;
-            document.getElementById('answer').textContent += ', ' + newvalue;
         }
     </script>
 </body>

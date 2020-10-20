@@ -10,9 +10,11 @@
 <body>
     <div id="clubs" class="clubs"></div>
     <script>
-        function Person (name, age) {
-            this.name = name;
-            this.age = age;
+        class Person {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
         }
 
         const persons = [
@@ -24,16 +26,13 @@
             new Person("Mono", 28),
             new Person("West", 23),
         ]
-        
-        let newPerson = {
-            name: "Jan",
-            age: 24,
-        }
 
-        console.log(newPerson.age);
+        persons.sort(function (a, b) {
+            return a.age - b.age
+        })
 
-        // Voordeel is dat je niet een hele functie hoeft te schrijven met alle properties erbij.
-        // Nadeel is dat je de waardes niet kan laten verwijzen naar andere waardes van zichzelf met 'this.age' of vergelijkbaar.
+        console.log(persons);
+
     </script>
 </body>
 
