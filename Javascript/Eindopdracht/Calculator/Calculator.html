@@ -10,26 +10,27 @@
     <div id="calculator">
         <div id="answer">0</div>
         <div class="buttonholder">
-            <button class="white">C</button>
-            <button class="white">+/-</button>
-            <button class="white">%</button>
-            <button class="orange">/</button>
-            <button class="grey">7</button>
-            <button class="grey">8</button>
-            <button class="grey">9</button>
-            <button class="orange">x</button>
-            <button class="grey">4</button>
-            <button class="grey">5</button>
-            <button class="grey">6</button>
-            <button class="orange">-</button>
-            <button class="grey">1</button>
-            <button class="grey">2</button>
-            <button class="grey">3</button>
-            <button class="orange">+</button>
-            <button class="grey" id="bigbtn">0</button>
-            <button class="grey">.</button>
-            <button class="orange">=</button>
+            <button class="white" id="clear" onclick="modifier(this)">C</button>
+            <button class="white" onclick="modifier(this)">+/-</button>
+            <button class="white" onclick="modifier(this)">%</button>
+            <button class="orange" onclick="modifier(this)">/</button>
+            <button class="grey" onclick="editor(this)">7</button>
+            <button class="grey" onclick="editor(this)">8</button>
+            <button class="grey" onclick="editor(this)">9</button>
+            <button class="orange" onclick="modifier(this)">*</button>
+            <button class="grey" onclick="editor(this)">4</button>
+            <button class="grey" onclick="editor(this)">5</button>
+            <button class="grey" onclick="editor(this)">6</button>
+            <button class="orange" onclick="modifier(this)">-</button>
+            <button class="grey" onclick="editor(this)">1</button>
+            <button class="grey" onclick="editor(this)">2</button>
+            <button class="grey" onclick="editor(this)">3</button>
+            <button class="orange" onclick="modifier(this)">+</button>
+            <button class="grey" id="bigbtn" onclick="editor(this)">0</button>
+            <button class="grey" onclick="editor(this)">.</button>
+            <button class="orange" onclick="modifier(this)">=</button>
         </div>
     </div>
+    <script src="calculator.js"></script>
 </body>
 </html>

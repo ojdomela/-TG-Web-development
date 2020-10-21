@@ -16,6 +16,7 @@
     color: white;
     line-height: 100px;
     padding: 0 15px;
+    overflow-x: auto;
 }
 
 .buttonholder {
@@ -29,6 +30,8 @@
 button {
     border-radius: 50%;
     width:70px;
+    font-weight: bold;
+    font-size: large;
     height:70px;
     border: none;
     margin: 2px;
