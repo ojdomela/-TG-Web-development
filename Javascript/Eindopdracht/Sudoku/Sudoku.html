@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sudoku.css">
+</head>
+
+<body>
+    <button onclick="createSudoku()">Create new!</button>
+    <button onclick="iterateSudoku()">Iterate!</button>
+    <button>Solve!</button>
+    <div class="sudokuBox">
+        <div class="sudokuSquare">
+            <div class="sudokuCell r1 c1 s1" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r1 c2 s1" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r1 c3 s1" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r2 c1 s1" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r2 c2 s1" onclick="showPossibles(this)">1</div>
+            <div class="sudokuCell r2 c3 s1" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r3 c1 s1" onclick="showPossibles(this)">8</div>
+            <div class="sudokuCell r3 c2 s1" onclick="showPossibles(this)">2</div>
+            <div class="sudokuCell r3 c3 s1" onclick="showPossibles(this)">7</div>
+        </div>
+        <div class="sudokuSquare">
+            <div class="sudokuCell r1 c4 s2" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r1 c5 s2" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r1 c6 s2" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r2 c4 s2" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r2 c5 s2" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r2 c6 s2" onclick="showPossibles(this)">8</div>
+            <div class="sudokuCell r3 c4 s2" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r3 c5 s2" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r3 c6 s2" onclick="showPossibles(this)">9</div>
+        </div>
+        <div class="sudokuSquare">
+            <div class="sudokuCell r1 c7 s3" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r1 c8 s3" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r1 c9 s3" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r2 c7 s3" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r2 c8 s3" onclick="showPossibles(this)">2</div>
+            <div class="sudokuCell r2 c9 s3" onclick="showPossibles(this)">7</div>
+            <div class="sudokuCell r3 c7 s3" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r3 c8 s3" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r3 c9 s3" onclick="showPossibles(this)"></div>
+        </div>
+        <div class="sudokuSquare">
+            <div class="sudokuCell r4 c1 s4" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r4 c2 s4" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r4 c3 s4" onclick="showPossibles(this)">5</div>
+            <div class="sudokuCell r5 c1 s4" onclick="showPossibles(this)">7</div>
+            <div class="sudokuCell r5 c2 s4" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r5 c3 s4" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r6 c1 s4" onclick="showPossibles(this)">3</div>
+            <div class="sudokuCell r6 c2 s4" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r6 c3 s4" onclick="showPossibles(this)"></div>
+        </div>
+        <div class="sudokuSquare">
+            <div class="sudokuCell r4 c4 s5" onclick="showPossibles(this)">1</div>
+            <div class="sudokuCell r4 c5 s5" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r4 c6 s5" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r5 c4 s5" onclick="showPossibles(this)">9</div>
+            <div class="sudokuCell r5 c5 s5" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r5 c6 s5" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r6 c4 s5" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r6 c5 s5" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r6 c6 s5" onclick="showPossibles(this)"></div>
+        </div>
+        <div class="sudokuSquare">
+            <div class="sudokuCell r4 c7 s6" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r4 c8 s6" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r4 c9 s6" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r5 c7 s6" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r5 c8 s6" onclick="showPossibles(this)">1</div>
+            <div class="sudokuCell r5 c9 s6" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r6 c7 s6" onclick="showPossibles(this)">9</div>
+            <div class="sudokuCell r6 c8 s6" onclick="showPossibles(this)">8</div>
+            <div class="sudokuCell r6 c9 s6" onclick="showPossibles(this)">2</div>
+        </div>
+        <div class="sudokuSquare">
+            <div class="sudokuCell r7 c1 s7" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r7 c2 s7" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r7 c3 s7" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r8 c1 s7" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r8 c2 s7" onclick="showPossibles(this)">8</div>
+            <div class="sudokuCell r8 c3 s7" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r9 c1 s7" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r9 c2 s7" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r9 c3 s7" onclick="showPossibles(this)"></div>
+        </div>
+        <div class="sudokuSquare">
+            <div class="sudokuCell r7 c4 s8" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r7 c5 s8" onclick="showPossibles(this)">3</div>
+            <div class="sudokuCell r7 c6 s8" onclick="showPossibles(this)">4</div>
+            <div class="sudokuCell r8 c4 s8" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r8 c5 s8" onclick="showPossibles(this)">7</div>
+            <div class="sudokuCell r8 c6 s8" onclick="showPossibles(this)">5</div>
+            <div class="sudokuCell r9 c4 s8" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r9 c5 s8" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r9 c6 s8" onclick="showPossibles(this)"></div>
+        </div>
+        <div class="sudokuSquare">
+            <div class="sudokuCell r7 c7 s9" onclick="showPossibles(this)">6</div>
+            <div class="sudokuCell r7 c8 s9" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r7 c9 s9" onclick="showPossibles(this)">8</div>
+            <div class="sudokuCell r8 c7 s9" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r8 c8 s9" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r8 c9 s9" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r9 c7 s9" onclick="showPossibles(this)">5</div>
+            <div class="sudokuCell r9 c8 s9" onclick="showPossibles(this)"></div>
+            <div class="sudokuCell r9 c9 s9" onclick="showPossibles(this)"></div>
+        </div>
+    </div>
+    <script src="Sudoku.js"></script>
+</body>
+
+</html>
