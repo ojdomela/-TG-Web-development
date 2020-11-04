@@ -1,5 +1,6 @@
 let cells = document.getElementsByClassName('sudokuCell');
 let squares = document.getElementsByClassName('sudokuSquare');
+let itemSelected = '';
 
 for (i = 0; i < cells.length; i++) {
     if (cells[i].textContent == '') {
@@ -9,7 +10,37 @@ for (i = 0; i < cells.length; i++) {
     }
 }
 
-function showPossibles(item) {
+function modifyItem(item) {
+    
+    if (itemSelected == 'Possibles') {
+        console.log(item.possibleNumbers)
+    } else if (itemSelected == '') {
+        item.textContent = itemSelected;
+        item.possibleNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    } else {
+        let highlighted = Array.from(document.getElementsByClassName('highlight'))
+        let highlightContainsItem = false;
+        for (i=0;i<highlighted.length;i++) {
+            if (highlighted[i].textContent == itemSelected) {
+                highlightContainsItem = true;
+            }
+        }
+        if (!highlightContainsItem) {
+            item.textContent = itemSelected;
+            item.possibleNumbers = [];
+            sanitizeSudoku()
+        } else {
+            console.log('This cant fit here!')
+        }
+    }
+}
+
+function clickCell(item) {
+    highlight(item)
+    modifyItem(item)
+}
+
+function highlight(item) {
     for (i = 0; i < cells.length; i++) {
         if (cells[i].classList.contains('highlight')) {
             cells[i].classList.remove('highlight');
@@ -23,14 +54,37 @@ function showPossibles(item) {
             cells[i].classList.add('highlight')
         }
     }
-    console.log(item.possibleNumbers)
+}
+
+function cleanSudoku() {
+    for (i = 0; i < cells.length; i++) {
+        cells[i].textContent = ''
+        cells[i].possibleNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    }
+}
+
+function clickSelector(item) {
+    if (item.textContent == 'Erase!') {
+        itemSelected = '';
+    } else {
+        itemSelected = item.textContent;
+    }
 }
 
 function iterateSudoku() {
 
+    sanitizeSudoku()
+
+    doubleDoubleCleaner()
+
+    checkforUniques()
+
+    crossOutLines()
+}
+
+function sanitizeSudoku() {
     // Checks all cells for content
     // Then removes that content from the possible numbers of any other cell with a matching square, row or column
-    // If any cell has 1 possible number remaining afterwards, it gets filled in
     // It could be cleaned up a bit by chucking the if (textcontent) outside the second for loop instead of inside
 
     for (a = 0; a < cells.length; a++) {
@@ -51,8 +105,9 @@ function iterateSudoku() {
             }
         }
     }
+}
 
-
+function doubleDoubleCleaner() {
     let firstValueToRemove = [];
     let secondValueToRemove = [];
     let firstClassList = [];
@@ -116,9 +171,10 @@ function iterateSudoku() {
             }
         }
     }
+}
 
+function checkforUniques() {
     // Checks for any unique values in possible numbers in all squares, rows and columns
-
     for (a = 1; a < 10; a++) {
         for (i = 1; i < 10; i++) {
             let checkedSquare = Array.from(document.getElementsByClassName('s' + i));
@@ -193,8 +249,9 @@ function iterateSudoku() {
             }
         }
     }
+}
 
-
+function crossOutLines() {
     // Check for objects in a line here! (WIP)
 
     for (a = 1; a < 10; a++) {
@@ -228,14 +285,19 @@ function iterateSudoku() {
         }
     }
 
+
 }
 
-// This one can be cleaner too I think
-
 function solveSudoku() {
-    for (i = 0; i < cells.length; i++) {
-        if (cells[i].textContent == '') {
-            iterateSudoku();
-        }
+    let before;
+    let after;
+    do {
+        before = Array.from(cells).flatMap(x => x.possibleNumbers).length
+        iterateSudoku();
+        after = Array.from(cells).flatMap(x => x.possibleNumbers).length
+    } while (before != after && after != 0)
+
+    if (after != 0) {
+        console.log('You beat me! I cant solve this Sudoku')
     }
 }
